@@ -5,13 +5,23 @@ import Exercises from '../Exercises'
 import HeroBanner from '../HeroBanner'
 import SearchExercises from '../SearchExercises'
 const Home = () => {
+
+  const [bodyPart, setBodyPart] = useState('all')
+  const [exercises, setExercises] = useState([])
+
   return (
     <Box>
       <HeroBanner/>
-      <SearchExercises/>
-      <Exercises/>
+      <SearchExercises 
+      setExercises={setExercises}
+      bodyPart={bodyPart}
+      setBodyPart={setBodyPart}/>
+      <Exercises
+      setExercises={setExercises}
+      bodyPart={bodyPart}
+      setBodyPart={setBodyPart}/>
     </Box>
   )
 }
-
+//Quando usar varios componentes, tentar fazer com React context api
 export default Home
