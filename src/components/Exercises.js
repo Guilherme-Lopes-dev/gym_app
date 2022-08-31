@@ -9,7 +9,7 @@ import Loader from './Loader';
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
-
+  exercises = []
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];

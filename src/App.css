@@ -80,7 +80,7 @@ body {
   
   .exercise-card img {
     height: 326px;
-    width: 380px;
+    width: 270px;
   }
   
   .bodyPart-card {
@@ -129,6 +129,7 @@ body {
   
     .exercise-card {
       width: 320px;
+      
     }
   
     .exercise-video {
